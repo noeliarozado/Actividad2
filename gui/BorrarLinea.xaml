@@ -9,8 +9,8 @@
     <Grid>
         <Label Content="Línea a borrar" HorizontalAlignment="Left" Margin="120,69,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="comboBorrar" ItemsSource="{Binding ComboLineas}" HorizontalAlignment="Left" Margin="290,69,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="290,143,0,0" VerticalAlignment="Top" Click="DeleteButton_Click"/>
-        <Button x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="80,359,0,0" VerticalAlignment="Top" Click="backButton_Click"/>
-        <Button x:Name="btnMenu" Content="Menú principal" HorizontalAlignment="Left" Margin="623,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="menuButton_Click"/>
+        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="290,143,0,0" VerticalAlignment="Top" Click="btnBorrar_Click"/>
+        <Button x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="80,359,0,0" VerticalAlignment="Top" Click="btnVolver_Click"/>
+        <Button x:Name="btnMenu" Content="Menú principal" HorizontalAlignment="Left" Margin="623,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click"/>
     </Grid>
 </Window>

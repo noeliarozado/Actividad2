@@ -17,8 +17,8 @@
         <ComboBox x:Name="comboDestino" ItemsSource="{Binding Municipios}" HorizontalAlignment="Left" Margin="250,150,0,0" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textboxHoraInicialSalida" Text="{Binding Path=HoraSalida, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" HorizontalAlignment="Left" Margin="250,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textboxIntervaloBuses" Text="{Binding Path=Intervalo, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" HorizontalAlignment="Left" Margin="250,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnAnadir" Content="Añadir" HorizontalAlignment="Left" Margin="400,301,0,0" VerticalAlignment="Top" Height="29" Width="90" RenderTransformOrigin="1.667,0.243" Click="AddButton_Click"/>
-        <Button x:Name="btnVolver" Content="Back" HorizontalAlignment="Left" Margin="80,359,0,0" VerticalAlignment="Top" Click="backButton_Click"/>
-        <Button x:Name="btnMenu" Content="Menú principal" HorizontalAlignment="Left" Margin="623,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="menuButton_Click"/>
+        <Button x:Name="btnAnadir" Content="Añadir" HorizontalAlignment="Left" Margin="400,301,0,0" VerticalAlignment="Top" Height="29" Width="90" RenderTransformOrigin="1.667,0.243" Click="btnAnadir_Click"/>
+        <Button x:Name="btnVolver" Content="Back" HorizontalAlignment="Left" Margin="80,359,0,0" VerticalAlignment="Top" Click="btnVolver_Click"/>
+        <Button x:Name="btnMenu" Content="Menú principal" HorizontalAlignment="Left" Margin="623,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click"/>
     </Grid>
 </Window>

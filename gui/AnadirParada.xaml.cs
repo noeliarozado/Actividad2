@@ -257,7 +257,7 @@ namespace Actividad2.gui
             this.Close();
         }
 
-        private void menuButton_Click(object sender, RoutedEventArgs e)
+        private void btnMenu_Click(object sender, RoutedEventArgs e)
         {
             MenuPrincipal menuPrincipal = new MenuPrincipal();
             menuPrincipal.Show();

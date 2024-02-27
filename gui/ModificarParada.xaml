@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="ModificarParada" Height="450" Width="800">
     <Grid>
-        <DataGrid x:Name="dgParadas" ItemsSource="{Binding Paradas}" AutoGenerateColumns="False" Margin="31,35,32,196" SelectionChanged="dgStops_SelectionChanged">
+        <DataGrid x:Name="dgParadas" ItemsSource="{Binding Paradas}" AutoGenerateColumns="False" Margin="31,35,32,196" SelectionChanged="dgParadas_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Número de línea" Binding="{Binding NumeroLinea}"/>
                 <DataGridTextColumn Header="Municipio" Binding="{Binding Municipio}"/>
@@ -20,9 +20,9 @@
         <ComboBox x:Name="comboNumeroLinea" ItemsSource ="{Binding Path=ComboLineas}" HorizontalAlignment="Left" Margin="250,250,0,0" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="comboMunicipio" ItemsSource="{Binding Municipios}" HorizontalAlignment="Left" Margin="250,300,0,0" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textboxIntervalo" Text="{Binding Path=Intervalo, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" HorizontalAlignment="Left" Margin="250,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Margin="498,376,0,0" VerticalAlignment="Top" Click="modifyButton_Click"/>
-        <Button x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="80,380,0,0" VerticalAlignment="Top" Click="backButton_Click"/>
-        <Button x:Name="btnMenu" Content="Menú principal" HorizontalAlignment="Left" Margin="623,380,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="menuButton_Click"/>
+        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Margin="498,376,0,0" VerticalAlignment="Top" Click="btnModificar_Click"/>
+        <Button x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="80,380,0,0" VerticalAlignment="Top" Click="btnVolver_Click"/>
+        <Button x:Name="btnMenu" Content="Menú principal" HorizontalAlignment="Left" Margin="623,380,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click"/>
     </Grid>
 </Window>
 

@@ -192,7 +192,7 @@ namespace Actividad2.gui
             return municipios;
         }
 
-        private void AddButton_Click(object sender, RoutedEventArgs e)
+        private void btnAnadir_Click(object sender, RoutedEventArgs e)
         {
             int numeroLinea = int.Parse(textboxNumeroLinea.Text);
             string municipioOrigen = comboOrigen.SelectedItem as string;

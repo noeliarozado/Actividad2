@@ -14,7 +14,7 @@
                 <DataGridTextColumn Header="Intervalo desde hora salida" Binding="{Binding IntervaloDesdeHoraSalida}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="80,359,0,0" VerticalAlignment="Top" Click="backButton_Click"/>
-        <Button x:Name="btnMenu" Content="Menú principal" HorizontalAlignment="Left" Margin="623,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="menuButton_Click"/>
+        <Button x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="80,359,0,0" VerticalAlignment="Top" Click="btnVolver_Click"/>
+        <Button x:Name="btnMenu" Content="Menú principal" HorizontalAlignment="Left" Margin="623,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click"/>
     </Grid>
 </Window>

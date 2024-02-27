@@ -43,7 +43,7 @@ namespace Actividad2.gui
 
         private void btnConsultar_Click(object sender, RoutedEventArgs e)
         {
-            ConsultarLinea consultarLinea = new ConsultarLinea();
+            ConsultarLineas consultarLinea = new ConsultarLineas();
             consultarLinea.Show();
             this.Close();
         }

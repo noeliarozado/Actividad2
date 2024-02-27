@@ -14,10 +14,10 @@
                 <DataGridTextColumn Header="Intervalo desde hora salida" Binding="{Binding IntervaloDesdeHoraSalida}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="btnBorrar" Content="Borrar parada" HorizontalAlignment="Left" Margin="430,250,0,0" VerticalAlignment="Top" Click="DeleteButton_Click"/>
+        <Button x:Name="btnBorrar" Content="Borrar parada" HorizontalAlignment="Left" Margin="430,250,0,0" VerticalAlignment="Top" Click="btnBorrar_Click"/>
         <ComboBox x:Name="comboBorrar" ItemsSource="{Binding ComboLineas}" HorizontalAlignment="Left" Margin="290,300,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnBorrarItinerario" Content="Borrar itinerario" HorizontalAlignment="Left" Margin="500,300,0,0" VerticalAlignment="Top" Click="deleteItineraryButton_Click"/>
-        <Button x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="80,359,0,0" VerticalAlignment="Top" Click="backButton_Click"/>
-        <Button x:Name="btnMenu" Content="Menú principal" HorizontalAlignment="Left" Margin="623,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="menuButton_Click"/>
+        <Button x:Name="btnBorrarItinerario" Content="Borrar itinerario" HorizontalAlignment="Left" Margin="500,300,0,0" VerticalAlignment="Top" Click="btnBorrarItinerario_Click"/>
+        <Button x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="80,359,0,0" VerticalAlignment="Top" Click="btnVolver_Click"/>
+        <Button x:Name="btnMenu" Content="Menú principal" HorizontalAlignment="Left" Margin="623,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click"/>
     </Grid>
 </Window>

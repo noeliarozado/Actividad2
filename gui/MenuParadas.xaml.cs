@@ -44,7 +44,7 @@ namespace Actividad2.gui
 
         private void btnConsultar_Click(object sender, RoutedEventArgs e)
         {
-            ConsultarParada consultarParada = new ConsultarParada();
+            ConsultarParadas consultarParada = new ConsultarParadas();
             consultarParada.Show();
             this.Close();
         }
