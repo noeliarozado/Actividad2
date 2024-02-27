@@ -1,22 +1,19 @@
-﻿<Window x:Class="Actividad2.gui.BorrarParada"
+﻿<Window x:Class="Actividad2.gui.ConsultarParadas"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Actividad2.gui"
         mc:Ignorable="d"
-        Title="BorrarParada" Height="450" Width="800">
+        Title="ConsultarParadas" Height="450" Width="800">
     <Grid>
-        <DataGrid x:Name="dgParadas" ItemsSource="{Binding Paradas}" AutoGenerateColumns="False" Margin="31,35,32,196">
+        <DataGrid ItemsSource="{Binding Paradas}" AutoGenerateColumns="False" Margin="31,35,32,92">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Número de línea" Binding="{Binding NumeroLinea}"/>
                 <DataGridTextColumn Header="Municipio" Binding="{Binding Municipio}"/>
                 <DataGridTextColumn Header="Intervalo desde hora salida" Binding="{Binding IntervaloDesdeHoraSalida}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="btnBorrar" Content="Borrar parada" HorizontalAlignment="Left" Margin="430,250,0,0" VerticalAlignment="Top" Click="DeleteButton_Click"/>
-        <ComboBox x:Name="comboBorrar" ItemsSource="{Binding ComboLineas}" HorizontalAlignment="Left" Margin="290,300,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnBorrarItinerario" Content="Borrar itinerario" HorizontalAlignment="Left" Margin="500,300,0,0" VerticalAlignment="Top" Click="deleteItineraryButton_Click"/>
         <Button x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="80,359,0,0" VerticalAlignment="Top" Click="backButton_Click"/>
         <Button x:Name="btnMenu" Content="Menú principal" HorizontalAlignment="Left" Margin="623,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="menuButton_Click"/>
     </Grid>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="Actividad2.gui.MenuParadas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Actividad2.gui"
+        mc:Ignorable="d"
+        Title="MenuParadas" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnAnadir" Content="Añadir" HorizontalAlignment="Left" Margin="275,98,0,0" VerticalAlignment="Top" Height="35" Width="162" Click="addButton_Click"/>
+        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="275,163,0,0" VerticalAlignment="Top" Height="35" Width="162" Click="deleteButton_Click"/>
+        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Margin="275,231,0,0" VerticalAlignment="Top" Height="35" Width="162" Click="modifyButton_Click"/>
+        <Button x:Name="btnConsultar" Content="Consultar" HorizontalAlignment="Left" Margin="275,297,0,0" VerticalAlignment="Top" Height="35" Width="162" Click="queryButton_Click"/>
+        <Button x:Name="btnMenu" Content="Menú principal" HorizontalAlignment="Left" Margin="671,369,0,0" VerticalAlignment="Top" Click="buttonMenu_Click"/>
+    </Grid>
+</Window>

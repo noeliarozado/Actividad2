@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Button x:Name="btnIniciar" Content="Iniciar" HorizontalAlignment="Left" Margin="360,197,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.582,0.697" Click="initiateButton_Click"/>
     </Grid>
 </Window>
