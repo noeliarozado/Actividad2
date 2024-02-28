@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:Actividad2.gui"
         mc:Ignorable="d"
         Title="ConsultarLineas" Height="450" Width="800">
-    <Grid Margin="0,0,291,124">
-        <DataGrid ItemsSource="{Binding Lineas}" AutoGenerateColumns="False" Margin="28,32,0,0">
+    <Grid>
+        <DataGrid ItemsSource="{Binding Lineas}" AutoGenerateColumns="False" Margin="48,45,48,119">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Número de línea" Binding="{Binding NumeroLinea}"/>
                 <DataGridTextColumn Header="Origen" Binding="{Binding MunicipioOrigen}"/>
