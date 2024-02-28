@@ -23,7 +23,7 @@ namespace Actividad2.gui
 
         private List<Parada> paradas;
 
-        public List<Parada> Parada
+        public List<Parada> Paradas
         {
             get { return paradas; }
             set { paradas = value; OnPropertyChanged(nameof(paradas)); }
@@ -41,7 +41,7 @@ namespace Actividad2.gui
         {
             List<Parada> paradas = logicaBus.GetListaParadas();
 
-            Parada = paradas.OrderBy(stop => stop.NumeroLinea)
+            Paradas = paradas.OrderBy(stop => stop.NumeroLinea)
                             .ThenBy(stop => stop.IntervaloDesdeHoraSalida)
                             .ToList();
         }

@@ -9,7 +9,7 @@
     <Grid Margin="0,0,291,124">
         <DataGrid ItemsSource="{Binding Lineas}" AutoGenerateColumns="False" Margin="28,32,0,0">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Número de línea" Binding="{Binding LineaNumber}"/>
+                <DataGridTextColumn Header="Número de línea" Binding="{Binding NumeroLinea}"/>
                 <DataGridTextColumn Header="Origen" Binding="{Binding MunicipioOrigen}"/>
                 <DataGridTextColumn Header="Destino" Binding="{Binding MunicipioDestino}"/>
                 <DataGridTextColumn Header="Hora de salida" Binding="{Binding HoraInicialSalida, StringFormat=HH:mm}"/>
