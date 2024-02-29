@@ -207,6 +207,8 @@ namespace Actividad2.gui
             if (dgParadas.SelectedIndex != -1)
             {
                 Parada paradaSeleccionada = Paradas[dgParadas.SelectedIndex];
+                Parada paradaOriginal = new Parada(paradaSeleccionada.NumeroLinea, paradaSeleccionada.Municipio, 
+                    paradaSeleccionada.IntervaloDesdeHoraSalida);
 
                 if (!string.IsNullOrEmpty(comboNumeroLinea.Text)
                 && !string.IsNullOrEmpty(textboxIntervalo.Text)
@@ -218,14 +220,21 @@ namespace Actividad2.gui
 
                     if (TimeSpan.TryParseExact(textboxIntervalo.Text, "hh\\:mm", null, out intervaloDesdeSalida))
                     {
-                        paradaSeleccionada.NumeroLinea = numeroLinea;
-                        paradaSeleccionada.Municipio = municipio;
-                        paradaSeleccionada.IntervaloDesdeHoraSalida = intervaloDesdeSalida;
+                        if (paradaExiste(numeroLinea, municipio))
+                        {
+                            MessageBox.Show("Error. La parada ya existe.");
+                        }
+                        else
+                        {
+                            paradaSeleccionada.NumeroLinea = numeroLinea;
+                            paradaSeleccionada.Municipio = municipio;
+                            paradaSeleccionada.IntervaloDesdeHoraSalida = intervaloDesdeSalida;
 
-                        logicaBus.ActualizarParada(paradaSeleccionada);
-                        MessageBox.Show("¡Parada modificada con éxito!");
+                            logicaBus.ActualizarParada(paradaSeleccionada, paradaOriginal);
+                            MessageBox.Show("¡Parada modificada con éxito!");
 
-                        CargarParadasOrdenadas();
+                            CargarParadasOrdenadas();
+                        }
                     }
                     else
                     {
@@ -241,6 +250,19 @@ namespace Actividad2.gui
             {
                 MessageBox.Show("Por favor, seleccione la parada a modificar.");
             }
+        }
+
+        private bool paradaExiste(int numeroLinea,string municipio)
+        {
+            foreach (Parada parada in Paradas)
+            {
+                if (parada.NumeroLinea == numeroLinea &&
+                   parada.Municipio == municipio)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         private void btnVolver_Click(object sender, RoutedEventArgs e)
@@ -279,7 +301,11 @@ namespace Actividad2.gui
 
                         if (paradaSeleccionada.IntervaloDesdeHoraSalida != null)
                         {
-                            textboxIntervalo.Text = paradaSeleccionada.IntervaloDesdeHoraSalida.ToString();
+                            string intervaloModificado = paradaSeleccionada.IntervaloDesdeHoraSalida
+                                .ToString().Remove(paradaSeleccionada.IntervaloDesdeHoraSalida.ToString()
+                                .Length - 3);
+
+                            textboxIntervalo.Text = intervaloModificado;
                         }
                     }
                 }

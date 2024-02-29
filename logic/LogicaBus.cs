@@ -131,11 +131,13 @@ namespace Actividad2.logic
         /// Actualiza la información de una parada en el archivo CSV
         /// </summary>
         /// <param name="paradaActualizada">Parada con la información actualizada</param>
-        public void ActualizarParada(Parada paradaActualizada)
+        public void ActualizarParada(Parada paradaActualizada, Parada paradaOriginal)
         {
             foreach (Parada parada in listaParadas)
             {
-                if (parada.NumeroLinea == paradaActualizada.NumeroLinea)
+                if (parada.NumeroLinea == paradaOriginal.NumeroLinea &&
+                    parada.Municipio == paradaOriginal.Municipio
+                    )
                 {
                     parada.NumeroLinea = paradaActualizada.NumeroLinea;
                     parada.Municipio = paradaActualizada.Municipio;
