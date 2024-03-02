@@ -5,12 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Actividad2.gui"
         mc:Ignorable="d"
-        Title="MenuParadas" Height="450" Width="800">
+        Title="MenuParadas" Height="450" Width="800" Background=" #E4EEFF">
     <Grid>
-        <Button x:Name="btnAnadir" Content="Añadir" HorizontalAlignment="Left" Margin="275,98,0,0" VerticalAlignment="Top" Height="35" Width="162" Click="btnAnadir_Click"/>
-        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="275,163,0,0" VerticalAlignment="Top" Height="35" Width="162" Click="btnBorrar_Click"/>
-        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Margin="275,231,0,0" VerticalAlignment="Top" Height="35" Width="162" Click="btnModificar_Click"/>
-        <Button x:Name="btnConsultar" Content="Consultar" HorizontalAlignment="Left" Margin="275,297,0,0" VerticalAlignment="Top" Height="35" Width="162" Click="btnConsultar_Click"/>
-        <Button x:Name="btnMenu" Content="Menú principal" HorizontalAlignment="Left" Margin="671,369,0,0" VerticalAlignment="Top" Click="btnMenu_Click"/>
+        <Button x:Name="btnAnadir" Content="Añadir" HorizontalAlignment="Left" Margin="275,98,0,0" VerticalAlignment="Top" Height="35" Width="162" Click="btnAnadir_Click" Background="White" Foreground="Black"/>
+        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="275,163,0,0" VerticalAlignment="Top" Height="35" Width="162" Click="btnBorrar_Click" Background="White" Foreground="Black"/>
+        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Margin="275,231,0,0" VerticalAlignment="Top" Height="35" Width="162" Click="btnModificar_Click" Background="White" Foreground="Black"/>
+        <Button x:Name="btnConsultar" Content="Consultar" HorizontalAlignment="Left" Margin="275,297,0,0" VerticalAlignment="Top" Height="35" Width="162" Click="btnConsultar_Click" Background="White" Foreground="Black"/>
+        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="671,369,0,0" VerticalAlignment="Top" Click="btnMenu_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                </Style>
+            </Button.Style>
+            <Image Source="/resources/main.png" Width="50" Height="50" Opacity="0.995" />
+        </Button>
     </Grid>
 </Window>

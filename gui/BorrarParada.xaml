@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Actividad2.gui"
         mc:Ignorable="d"
-        Title="BorrarParada" Height="450" Width="800">
+        Title="BorrarParada" Height="450" Width="800" Background=" #E4EEFF">
     <Grid>
         <DataGrid x:Name="dgParadas" ItemsSource="{Binding Paradas}" AutoGenerateColumns="False" Margin="31,35,32,196">
             <DataGrid.Columns>
@@ -14,10 +14,26 @@
                 <DataGridTextColumn Header="Intervalo desde hora salida" Binding="{Binding IntervaloDesdeHoraSalida}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="btnBorrar" Content="Borrar parada" HorizontalAlignment="Left" Margin="430,250,0,0" VerticalAlignment="Top" Click="btnBorrar_Click"/>
+        <Button x:Name="btnBorrar" Content="Borrar parada" HorizontalAlignment="Left" Margin="430,250,0,0" VerticalAlignment="Top" Click="btnBorrar_Click" Background="White" Foreground="Black"/>
         <ComboBox x:Name="comboBorrar" ItemsSource="{Binding ComboLineas}" HorizontalAlignment="Left" Margin="290,300,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnBorrarItinerario" Content="Borrar itinerario" HorizontalAlignment="Left" Margin="500,300,0,0" VerticalAlignment="Top" Click="btnBorrarItinerario_Click"/>
-        <Button x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="80,359,0,0" VerticalAlignment="Top" Click="btnVolver_Click"/>
-        <Button x:Name="btnMenu" Content="Menú principal" HorizontalAlignment="Left" Margin="623,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click"/>
+        <Button x:Name="btnBorrarItinerario" Content="Borrar itinerario" HorizontalAlignment="Left" Margin="500,300,0,0" VerticalAlignment="Top" Click="btnBorrarItinerario_Click" Background="White" Foreground="Black"/>
+        <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="80,359,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                </Style>
+            </Button.Style>
+            <Image Source="/resources/back.png" Width="50" Height="50" Opacity="0.995" />
+        </Button>
+        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="623,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                </Style>
+            </Button.Style>
+            <Image Source="/resources/main.png" Width="50" Height="50" Opacity="0.995" />
+        </Button>
     </Grid>
 </Window>

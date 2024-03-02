@@ -5,13 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Actividad2.gui"
         mc:Ignorable="d"
-        Title="ModificarParada" Height="450" Width="800">
+        Title="ModificarParada" Height="450" Width="800" Background=" #E4EEFF">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="HeaderBackgroundBrush" Color="#FFCCE5FF"/>
+        <Style x:Key="CenteredHeaderStyle" TargetType="DataGridColumnHeader">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="{StaticResource HeaderBackgroundBrush}"/>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
         <DataGrid x:Name="dgParadas" ItemsSource="{Binding Paradas}" AutoGenerateColumns="False" Margin="31,35,32,196" SelectionChanged="dgParadas_SelectionChanged">
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource CenteredHeaderStyle}"/>
+            </DataGrid.ColumnHeaderStyle>
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Número de línea" Binding="{Binding NumeroLinea}"/>
-                <DataGridTextColumn Header="Municipio" Binding="{Binding Municipio}"/>
-                <DataGridTextColumn Header="Intervalo desde hora salida" Binding="{Binding IntervaloDesdeHoraSalida}"/>
+                <DataGridTextColumn Header="Número de línea" Binding="{Binding NumeroLinea}" Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Municipio" Binding="{Binding Municipio}" Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Intervalo desde hora salida" Binding="{Binding IntervaloDesdeHoraSalida}" Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Label Content="Número de línea:" HorizontalAlignment="Left" Margin="80,250,0,0" VerticalAlignment="Top"/>
@@ -20,9 +51,24 @@
         <ComboBox x:Name="comboNumeroLinea" ItemsSource ="{Binding Path=ComboLineas}" HorizontalAlignment="Left" Margin="250,250,0,0" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="comboMunicipio" ItemsSource="{Binding Municipios}" HorizontalAlignment="Left" Margin="250,300,0,0" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textboxIntervalo" Text="{Binding Path=Intervalo, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" HorizontalAlignment="Left" Margin="250,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Margin="498,376,0,0" VerticalAlignment="Top" Click="btnModificar_Click"/>
-        <Button x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="80,380,0,0" VerticalAlignment="Top" Click="btnVolver_Click"/>
-        <Button x:Name="btnMenu" Content="Menú principal" HorizontalAlignment="Left" Margin="623,380,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click"/>
+        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Margin="498,376,0,0" VerticalAlignment="Top" Click="btnModificar_Click" Background="White" Foreground="Black"/>
+        <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="80,380,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                </Style>
+            </Button.Style>
+            <Image Source="/resources/back.png" Width="50" Height="50" Opacity="0.995" />
+        </Button>
+        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="623,380,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                </Style>
+            </Button.Style>
+            <Image Source="/resources/main.png" Width="50" Height="50" Opacity="0.995" />
+        </Button>
     </Grid>
 </Window>
-

@@ -5,18 +5,77 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Actividad2.gui"
         mc:Ignorable="d"
-        Title="ConsultarLineas" Height="450" Width="800">
+        Title="ConsultarLineas" Height="450" Width="800" Background=" #E4EEFF">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="HeaderBackgroundBrush" Color="#FFCCE5FF"/>
+        <Style x:Key="CenteredHeaderStyle" TargetType="DataGridColumnHeader">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="{StaticResource HeaderBackgroundBrush}"/>
+        </Style>
+    </Window.Resources>
+
     <Grid>
         <DataGrid ItemsSource="{Binding Lineas}" AutoGenerateColumns="False" Margin="48,45,48,119">
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource CenteredHeaderStyle}"/>
+            </DataGrid.ColumnHeaderStyle>
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Número de línea" Binding="{Binding NumeroLinea}"/>
-                <DataGridTextColumn Header="Origen" Binding="{Binding MunicipioOrigen}"/>
-                <DataGridTextColumn Header="Destino" Binding="{Binding MunicipioDestino}"/>
-                <DataGridTextColumn Header="Hora de salida" Binding="{Binding HoraInicialSalida, StringFormat=HH:mm}"/>
-                <DataGridTextColumn Header="Intervalo entre buses" Binding="{Binding IntervaloEntreBuses}"/>
+                <DataGridTextColumn Header="Número de línea" Binding="{Binding NumeroLinea}" Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Origen" Binding="{Binding MunicipioOrigen}" Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Destino" Binding="{Binding MunicipioDestino}" Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Hora de salida" Binding="{Binding HoraInicialSalida, StringFormat=HH:mm}" Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Intervalo entre buses" Binding="{Binding IntervaloEntreBuses}" Width="*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="80,359,0,0" VerticalAlignment="Top" Click="btnVolver_Click"/>
-        <Button x:Name="btnMenu" Content="Menú principal" HorizontalAlignment="Left" Margin="623,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click"/>
+        <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="80,359,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                </Style>
+            </Button.Style>
+            <Image Source="/resources/back.png" Width="50" Height="50" Opacity="0.995" />
+        </Button>
+        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="623,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                </Style>
+            </Button.Style>
+            <Image Source="/resources/main.png" Width="50" Height="50" Opacity="0.995" />
+        </Button>
     </Grid>
 </Window>

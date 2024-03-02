@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Actividad2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Background="#E4EEFF">
     <Grid>
-        <Button x:Name="btnIniciar" Content="Iniciar" HorizontalAlignment="Left" Margin="360,197,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.582,0.697" Click="btnIniciar_Click"/>
+        <Button x:Name="btnIniciar" Content="Iniciar" HorizontalAlignment="Left" Margin="360,197,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.582,0.697" Click="btnIniciar_Click" Background="White" Foreground="Black"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="501,157,0,0" VerticalAlignment="Top" Width="100" Source="/resources/bus.png"/>
     </Grid>
 </Window>

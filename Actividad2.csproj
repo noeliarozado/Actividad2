@@ -9,8 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="resources\back.png" />
+    <None Remove="resources\bus.png" />
+    <None Remove="resources\lineabus.png" />
+    <None Remove="resources\main.png" />
+    <None Remove="resources\paradabus.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="data\" />
-    <Folder Include="resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="resources\back.png" />
+    <Resource Include="resources\bus.png" />
+    <Resource Include="resources\lineabus.png" />
+    <Resource Include="resources\main.png" />
+    <Resource Include="resources\paradabus.png" />
   </ItemGroup>
 
 </Project>
