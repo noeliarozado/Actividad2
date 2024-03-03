@@ -7,10 +7,11 @@
         mc:Ignorable="d"
         Title="BorrarLinea" Height="450" Width="800" Background=" #E4EEFF">
     <Grid>
-        <Label Content="Línea a borrar" HorizontalAlignment="Left" Margin="120,69,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="comboBorrar" ItemsSource="{Binding ComboLineas}" HorizontalAlignment="Left" Margin="290,69,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="290,143,0,0" VerticalAlignment="Top" Click="btnBorrar_Click" Background="White" Foreground="Black"/>
-        <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="80,359,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
+        <Label Content="BAJA DE LÍNEAS" HorizontalAlignment="Center" Margin="0,51,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <Label Content="Seleccione la línea a borrar:" HorizontalAlignment="Left" Margin="131,156,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <ComboBox x:Name="comboBorrar" ItemsSource="{Binding ComboLineas}" HorizontalAlignment="Left" Margin="378,156,0,0" VerticalAlignment="Top" Width="120" FontSize="14" RenderTransformOrigin="0.85,0.738"/>
+        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="553,241,0,0" VerticalAlignment="Top" Click="btnBorrar_Click" Background="#DEF8F6" Foreground="Black" FontSize="14" Width="68"/>
+        <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="57,359,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="Transparent"/>
@@ -19,7 +20,7 @@
             </Button.Style>
             <Image Source="/resources/back.png" Width="50" Height="50" Opacity="0.995" />
         </Button>
-        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="623,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click">
+        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="690,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="Transparent"/>
