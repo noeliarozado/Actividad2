@@ -7,20 +7,21 @@
         mc:Ignorable="d"
         Title="ModificarLinea" Height="450" Width="800" Background=" #E4EEFF">
     <Grid>
-        <Label Content="LÍNEA A MODIFICAR:" HorizontalAlignment="Left" Margin="80,50,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="comboNumeroLinea" HorizontalAlignment="Left" ItemsSource="{Binding ComboLineas}" Margin="250,50,0,0" VerticalAlignment="Top" Width="240" SelectionChanged="LineNumberCombo_SelectionChanged"/>
-        <Label Content="Número de línea:" HorizontalAlignment="Left" Margin="80,100,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textboxNumeroLinea" Text="{Binding Path=NumeroLinea, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" HorizontalAlignment="Left" Margin="250,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Municipio de origen:" HorizontalAlignment="Left" Margin="80,150,0,0" VerticalAlignment="Top"/>
-        <Label Content="Municipio de destino:" HorizontalAlignment="Left" Margin="80,200,0,0" VerticalAlignment="Top"/>
-        <Label Content="Hora inicial de salida:" HorizontalAlignment="Left" Margin="80,250,0,0" VerticalAlignment="Top"/>
-        <Label Content="Intervalo entre buses:" HorizontalAlignment="Left" Margin="80,300,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="comboOrigen" ItemsSource="{Binding Municipios}" HorizontalAlignment="Left" Margin="250,150,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="comboDestino" ItemsSource="{Binding Municipios}" HorizontalAlignment="Left" Margin="250,200,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textboxHoraSalida" Text="{Binding Path=HoraSalida, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" HorizontalAlignment="Left" Margin="250,250,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="textboxIntervalo" Text="{Binding Path=Intervalo, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" HorizontalAlignment="Left" Margin="250,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Margin="400,350,0,0" VerticalAlignment="Top" Height="29" Width="90" RenderTransformOrigin="1.667,0.243" Click="btnModificar_Click" Background="White" Foreground="Black"/>
-        <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="80,359,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
+        <Label Content="MODIFICACIÓN DE ITINERARIOS" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <Label Content="Seleccione el número de línea a modificar:" HorizontalAlignment="Left" Margin="155,82,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="comboNumeroLinea" HorizontalAlignment="Left" ItemsSource="{Binding ComboLineas}" Margin="460,86,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="LineNumberCombo_SelectionChanged" FontSize="14"/>
+        <Label Content="Número de línea:" HorizontalAlignment="Left" Margin="155,127,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="textboxNumeroLinea" Text="{Binding Path=NumeroLinea, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" HorizontalAlignment="Left" Margin="325,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <Label Content="Municipio origen:" HorizontalAlignment="Left" Margin="155,177,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Municipio destino:" HorizontalAlignment="Left" Margin="155,227,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Hora inicial de salida:" HorizontalAlignment="Left" Margin="155,277,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Intervalo entre buses:" HorizontalAlignment="Left" Margin="155,327,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <ComboBox x:Name="comboOrigen" ItemsSource="{Binding Municipios}" HorizontalAlignment="Left" Margin="325,177,0,0" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <ComboBox x:Name="comboDestino" ItemsSource="{Binding Municipios}" HorizontalAlignment="Left" Margin="325,227,0,0" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <TextBox x:Name="textboxHoraSalida" Text="{Binding Path=HoraSalida, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" HorizontalAlignment="Left" Margin="325,277,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" FontSize="14" />
+        <TextBox x:Name="textboxIntervalo" Text="{Binding Path=Intervalo, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" HorizontalAlignment="Left" Margin="325,327,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" />
+        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Margin="475,359,0,0" VerticalAlignment="Top" Height="29" Width="90" RenderTransformOrigin="1.667,0.243" Click="btnModificar_Click" Background="#DEF8F6" Foreground="Black" FontSize="14"/>
+        <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="57,359,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="Transparent"/>
@@ -29,7 +30,7 @@
             </Button.Style>
             <Image Source="/resources/back.png" Width="50" Height="50" Opacity="0.995" />
         </Button>
-        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="623,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click">
+        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="690,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="Transparent"/>

@@ -15,9 +15,9 @@
             <Setter Property="Background" Value="{StaticResource HeaderBackgroundBrush}"/>
         </Style>
     </Window.Resources>
-    
+
     <Grid>
-        <DataGrid x:Name="dgParadas" ItemsSource="{Binding Paradas}" AutoGenerateColumns="False" Margin="31,35,32,196" SelectionChanged="dgParadas_SelectionChanged">
+        <DataGrid x:Name="dgParadas" ItemsSource="{Binding Paradas}" AutoGenerateColumns="False" Margin="140,57,140,216" SelectionChanged="dgParadas_SelectionChanged">
             <DataGrid.ColumnHeaderStyle>
                 <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource CenteredHeaderStyle}"/>
             </DataGrid.ColumnHeaderStyle>
@@ -45,14 +45,17 @@
                 </DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Label Content="Número de línea:" HorizontalAlignment="Left" Margin="80,250,0,0" VerticalAlignment="Top"/>
-        <Label Content="Municipio:" HorizontalAlignment="Left" Margin="80,300,0,0" VerticalAlignment="Top"/>
-        <Label Content="Intervalo desde hora de salida:" HorizontalAlignment="Left" Margin="80,350,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="comboNumeroLinea" ItemsSource ="{Binding Path=ComboLineas}" HorizontalAlignment="Left" Margin="250,250,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="comboMunicipio" ItemsSource="{Binding Municipios}" HorizontalAlignment="Left" Margin="250,300,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textboxIntervalo" Text="{Binding Path=Intervalo, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" HorizontalAlignment="Left" Margin="250,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Margin="498,376,0,0" VerticalAlignment="Top" Click="btnModificar_Click" Background="White" Foreground="Black"/>
-        <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="80,380,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
+
+        <Label Content="MODIFICACIÓN DE ITINERARIOS" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <Label Content="Seleccione en la tabla la parada que desea modificar:" HorizontalAlignment="Left" Margin="144,238,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Número de línea:" HorizontalAlignment="Left" Margin="144,268,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Municipio:" HorizontalAlignment="Left" Margin="144,311,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Intervalo desde hora de salida:" HorizontalAlignment="Left" Margin="145,355,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <ComboBox x:Name="comboNumeroLinea" ItemsSource ="{Binding Path=ComboLineas}" HorizontalAlignment="Left" Margin="360,272,0,0" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <ComboBox x:Name="comboMunicipio" ItemsSource="{Binding Municipios}" HorizontalAlignment="Left" Margin="360,313,0,0" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <TextBox x:Name="textboxIntervalo" Text="{Binding Path=Intervalo, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" HorizontalAlignment="Left" Margin="360,359,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" />
+        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Margin="512,376,0,0" VerticalAlignment="Top" Click="btnModificar_Click" Background="#DEF8F6" Foreground="Black" FontSize="14" Height="37" Width="92"/>
+        <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="57,359,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="Transparent"/>
@@ -61,7 +64,7 @@
             </Button.Style>
             <Image Source="/resources/back.png" Width="50" Height="50" Opacity="0.995" />
         </Button>
-        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="623,380,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click">
+        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="690,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="Transparent"/>

@@ -15,9 +15,9 @@
             <Setter Property="Background" Value="{StaticResource HeaderBackgroundBrush}"/>
         </Style>
     </Window.Resources>
-    
+
     <Grid>
-        <DataGrid x:Name="dgParadas" ItemsSource="{Binding Paradas}" AutoGenerateColumns="False" Margin="202,66,186,183">
+        <DataGrid x:Name="dgParadas" ItemsSource="{Binding Paradas}" AutoGenerateColumns="False" Margin="194,66,194,183">
             <DataGrid.ColumnHeaderStyle>
                 <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource CenteredHeaderStyle}"/>
             </DataGrid.ColumnHeaderStyle>
@@ -45,7 +45,7 @@
                 </DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Label Content="BAJA DE ITINERARIOS" HorizontalAlignment="Left" Margin="267,19,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <Label Content="CANCELACIÓN DE ITINERARIOS" HorizontalAlignment="Center" Margin="0,19,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
         <Button x:Name="btnBorrar" Content="Borrar parada" HorizontalAlignment="Left" Margin="612,259,0,0" VerticalAlignment="Top" Click="btnBorrar_Click" Background="#DEF8F6" Foreground="Black" Width="132" FontSize="14"/>
         <ComboBox x:Name="comboBorrar" ItemsSource="{Binding ComboLineas}" HorizontalAlignment="Left" Margin="445,305,0,0" VerticalAlignment="Top" Width="132"/>
         <Button x:Name="btnBorrarItinerario" Content="Borrar itinerario" HorizontalAlignment="Left" Margin="612,304,0,0" VerticalAlignment="Top" Click="btnBorrarItinerario_Click" Background="#DEF8F6" Foreground="Black" Width="132" FontSize="14" RenderTransformOrigin="0.47,0.886"/>

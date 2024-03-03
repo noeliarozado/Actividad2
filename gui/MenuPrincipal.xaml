@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MenuPrincipal" Height="450" Width="800" Background="#E4EEFF">
     <Grid>
-        <Button x:Name="btnLineas" Content="Gestión de líneas" HorizontalAlignment="Left" Height="47" Margin="204,0,0,0" VerticalAlignment="Center" Width="121" Click="btnLineas_Click" Background="White" Foreground="Black"/>
-        <Button x:Name="btnParadas" Content="Gestión de itinerarios" HorizontalAlignment="Left" Height="47" Margin="419,0,0,0" VerticalAlignment="Center" Width="121" Click="btnParadas_Click" Background="White" Foreground="Black"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="204,68,0,0" VerticalAlignment="Top" Width="100" Source="/resources/lineabus.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="419,68,0,0" VerticalAlignment="Top" Width="100" Source="/resources/paradabus.png"/>
+        <Button x:Name="btnLineas" Content="Gestión de líneas" HorizontalAlignment="Left" Height="47" Margin="165,264,0,0" VerticalAlignment="Top" Width="178" Click="btnLineas_Click" Background="#DEF8F6" Foreground="Black" FontSize="14"/>
+        <Button x:Name="btnParadas" Content="Gestión de itinerarios" Height="47" Margin="454,264,0,0" VerticalAlignment="Top" Click="btnParadas_Click" Background="#DEF8F6" Foreground="Black" FontSize="14" HorizontalAlignment="Left" Width="178"/>
+        <Image HorizontalAlignment="Left" Height="149" Margin="184,96,0,0" VerticalAlignment="Top" Width="140" Source="/resources/lineabus.png"/>
+        <Image HorizontalAlignment="Left" Height="140" Margin="474,98,0,0" VerticalAlignment="Top" Width="138" Source="/resources/paradabus.png"/>
     </Grid>
 </Window>

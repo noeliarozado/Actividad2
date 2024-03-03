@@ -7,7 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Background="#E4EEFF">
     <Grid>
-        <Button x:Name="btnIniciar" Content="Iniciar" HorizontalAlignment="Left" Margin="360,197,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.582,0.697" Click="btnIniciar_Click" Background="White" Foreground="Black"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="501,157,0,0" VerticalAlignment="Top" Width="100" Source="/resources/bus.png"/>
+        <Label Content="GESTIÓN DE LÍNEAS DE AUTOBUSES" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="28"/>
+        <Label Content="AVILESA" Foreground="#191970" HorizontalAlignment="Center" Margin="0,136,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" RenderTransformOrigin="0.433,0.598"/>
+        <Button x:Name="btnIniciar" Content="Iniciar" HorizontalAlignment="Center" Margin="0,328,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.582,0.697" Click="btnIniciar_Click" Background="#DEF8F6" Foreground="Black" FontSize="18" Height="44" Width="144" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Source="/resources/bus.png"/>
+        <Ellipse HorizontalAlignment="Center" Height="174" Margin="0,120,0,0" Stroke="#191970" StrokeThickness="7" VerticalAlignment="Top" Width="176" Fill="White" Opacity="0.5"/>
     </Grid>
 </Window>
