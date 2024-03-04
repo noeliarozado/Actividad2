@@ -16,7 +16,7 @@
         <Label Content="ALTA DE ITINERARIOS" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
         <Button x:Name="btnAnadir" Content="Añadir una parada" HorizontalAlignment="Left" Margin="466,247,0,0" VerticalAlignment="Top" Height="29" Width="212" RenderTransformOrigin="1.667,0.243" Click="btnAnadir_Click" Background="#DEF8F6" Foreground="Black" FontSize="14"/>
         <Button x:Name="btnAnadirNuevaParada" Content="Añadir otra parada al itinerario" HorizontalAlignment="Left" Margin="466,305,0,0" VerticalAlignment="Top" Height="28" Width="212" RenderTransformOrigin="1.667,0.243" Click="btnAnadirNuevaParada_Click" Background="#DEF8F6" Foreground="Black" FontSize="14"/>
-        <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="57,359,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
+        <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="57,345,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="Transparent"/>
@@ -25,7 +25,7 @@
             </Button.Style>
             <Image Source="/resources/back.png" Width="50" Height="50" Opacity="0.995" />
         </Button>
-        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="690,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click">
+        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="690,345,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="Transparent"/>

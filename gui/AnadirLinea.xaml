@@ -18,7 +18,7 @@
         <TextBox x:Name="textboxHoraInicialSalida" Text="{Binding Path=HoraSalida, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" HorizontalAlignment="Left" Margin="252,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
         <TextBox x:Name="textboxIntervaloBuses" Text="{Binding Path=Intervalo, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" HorizontalAlignment="Left" Margin="252,305,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
         <Button x:Name="btnAnadir" Content="Añadir" HorizontalAlignment="Left" Margin="406,340,0,0" VerticalAlignment="Top" Height="29" Width="90" RenderTransformOrigin="1.667,0.243" Click="btnAnadir_Click" Background="#DEF8F6" Foreground="Black" FontSize="14"/>
-        <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="57,359,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
+        <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="57,345,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="Transparent"/>
@@ -27,7 +27,7 @@
             </Button.Style>
             <Image Source="/resources/back.png" Width="50" Height="50" Opacity="0.995" />
         </Button>
-        <Button x:Name="btnMenu"  HorizontalAlignment="Left" Margin="690,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click">
+        <Button x:Name="btnMenu"  HorizontalAlignment="Left" Margin="690,345,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="Transparent"/>

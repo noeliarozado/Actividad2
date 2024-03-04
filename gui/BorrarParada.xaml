@@ -49,7 +49,7 @@
         <Button x:Name="btnBorrar" Content="Borrar parada" HorizontalAlignment="Left" Margin="612,259,0,0" VerticalAlignment="Top" Click="btnBorrar_Click" Background="#DEF8F6" Foreground="Black" Width="132" FontSize="14"/>
         <ComboBox x:Name="comboBorrar" ItemsSource="{Binding ComboLineas}" HorizontalAlignment="Left" Margin="445,305,0,0" VerticalAlignment="Top" Width="132"/>
         <Button x:Name="btnBorrarItinerario" Content="Borrar itinerario" HorizontalAlignment="Left" Margin="612,304,0,0" VerticalAlignment="Top" Click="btnBorrarItinerario_Click" Background="#DEF8F6" Foreground="Black" Width="132" FontSize="14" RenderTransformOrigin="0.47,0.886"/>
-        <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="57,359,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
+        <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="57,345,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="Transparent"/>
@@ -58,7 +58,7 @@
             </Button.Style>
             <Image Source="/resources/back.png" Width="50" Height="50" Opacity="0.995" />
         </Button>
-        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="690,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click">
+        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="690,345,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="Transparent"/>

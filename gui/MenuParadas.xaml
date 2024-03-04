@@ -11,7 +11,7 @@
         <Button x:Name="btnBorrar" Content="Cancelaciones" HorizontalAlignment="Left" Margin="275,163,0,0" VerticalAlignment="Top" Height="35" Width="162" Click="btnBorrar_Click" Background="#DEF8F6" Foreground="Black" FontSize="14"/>
         <Button x:Name="btnModificar" Content="Modificaciones" HorizontalAlignment="Left" Margin="275,231,0,0" VerticalAlignment="Top" Height="35" Width="162" Click="btnModificar_Click" Background="#DEF8F6" Foreground="Black" FontSize="14"/>
         <Button x:Name="btnConsultar" Content="Consultas" HorizontalAlignment="Left" Margin="275,297,0,0" VerticalAlignment="Top" Height="35" Width="162" Click="btnConsultar_Click" Background="#DEF8F6" Foreground="Black" FontSize="14"/>
-        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="690,359,0,0" VerticalAlignment="Top" Click="btnMenu_Click">
+        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="690,345,0,0" VerticalAlignment="Top" Click="btnMenu_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="Transparent"/>

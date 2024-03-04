@@ -17,7 +17,7 @@
     </Window.Resources>
 
     <Grid>
-        <DataGrid ItemsSource="{Binding Lineas}" AutoGenerateColumns="False" Margin="140,106,140,106">
+        <DataGrid ItemsSource="{Binding Lineas}" AutoGenerateColumns="False" Margin="144,106,144,106">
             <DataGrid.ColumnHeaderStyle>
                 <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource CenteredHeaderStyle}"/>
             </DataGrid.ColumnHeaderStyle>
@@ -50,7 +50,7 @@
                         </Style>
                     </DataGridTextColumn.ElementStyle>
                 </DataGridTextColumn>
-                <DataGridTextColumn Header="Intervalo entre buses" Binding="{Binding IntervaloEntreBuses}" Width="*">
+                <DataGridTextColumn Header="Intervalo buses" Binding="{Binding IntervaloEntreBuses}" Width="*">
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="HorizontalAlignment" Value="Center"/>
@@ -60,7 +60,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <Label Content="CONSULTA DE LÍNEAS" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
-        <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="80,359,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
+        <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="80,345,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="Transparent"/>
@@ -69,7 +69,7 @@
             </Button.Style>
             <Image Source="/resources/back.png" Width="50" Height="50" Opacity="0.995" />
         </Button>
-        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="690,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click">
+        <Button x:Name="btnMenu" HorizontalAlignment="Left" Margin="690,345,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.302,0.893" Click="btnMenu_Click">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="Transparent"/>
