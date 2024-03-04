@@ -51,6 +51,14 @@ namespace Actividad2.gui
             .OrderBy(num => num).ToList();
 
             DataContext = this;
+
+            btnBorrar.IsEnabled = false;
+            comboBorrar.SelectionChanged += ComboBorrar_SelectionChanged;
+        }
+
+        private void ComboBorrar_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            btnBorrar.IsEnabled = comboBorrar.SelectedItem != null;
         }
 
         private void btnBorrar_Click(object sender, RoutedEventArgs e)

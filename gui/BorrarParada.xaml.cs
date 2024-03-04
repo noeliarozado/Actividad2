@@ -68,6 +68,33 @@ namespace Actividad2.gui
             .Select(linea => linea.NumeroLinea).Distinct().OrderBy(num => num).ToList();
 
             DataContext = this;
+
+            btnBorrar.IsEnabled = false;
+            btnBorrarItinerario.IsEnabled = false;
+        }
+
+        private void dgParadas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (dgParadas.SelectedItem != null)
+            {
+                btnBorrar.IsEnabled = true;
+            }
+            else
+            {
+                btnBorrar.IsEnabled = false;
+            }
+        }
+
+        private void comboBorrar_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (comboBorrar.SelectedItem != null)
+            {
+                btnBorrarItinerario.IsEnabled = true;
+            }
+            else
+            {
+                btnBorrarItinerario.IsEnabled = false;
+            }
         }
 
         /// <summary>
