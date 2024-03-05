@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Actividad2.gui"
         mc:Ignorable="d"
-        Title="ModificarLinea" Height="450" Width="800" Background=" #E4EEFF">
+        Title="ModificarLinea" Height="450" Width="800" Background=" #E4EEFF" ResizeMode="NoResize">
     <Grid>
         <Label Content="MODIFICACIÓN DE LÍNEAS" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
         <Label Content="Seleccione el número de línea a modificar:" HorizontalAlignment="Left" Margin="155,82,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>

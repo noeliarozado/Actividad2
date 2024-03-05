@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Actividad2.gui"
         mc:Ignorable="d"
-        Title="AnadirLinea" Height="450" Width="800" Background="#E4EEFF">
+        Title="AnadirLinea" Height="450" Width="800" Background="#E4EEFF" ResizeMode="NoResize">
     <Grid>
         <Label Content="Número de línea:" HorizontalAlignment="Left" Margin="82,101,0,0" VerticalAlignment="Top" FontSize="14"/>
         <Label Content="Municipio origen:" HorizontalAlignment="Left" Margin="82,151,0,0" VerticalAlignment="Top" FontSize="14"/>

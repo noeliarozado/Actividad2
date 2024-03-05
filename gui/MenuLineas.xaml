@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Actividad2.gui"
         mc:Ignorable="d"
-        Title="MenuLineas" Height="450" Width="800" Background=" #E4EEFF">
+        Title="MenuLineas" Height="450" Width="800" Background=" #E4EEFF" ResizeMode="NoResize">
     <Grid>
         <Button x:Name="btnAnadir" Content="Altas" HorizontalAlignment="Left" Margin="275,98,0,0" VerticalAlignment="Top" Height="35" Width="162" Click="btnAnadir_Click" Background="#DEF8F6" Foreground="Black" FontSize="14"/>
         <Button x:Name="btnBorrar" Content="Cancelaciones" HorizontalAlignment="Left" Margin="275,163,0,0" VerticalAlignment="Top" Height="35" Width="162" Click="btnBorrar_Click" Background="#DEF8F6" Foreground="Black" FontSize="14"/>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Actividad2.gui"
         mc:Ignorable="d"
-        Title="ModificarParada" Height="450" Width="800" Background=" #E4EEFF">
+        Title="ModificarParada" Height="450" Width="800" Background=" #E4EEFF" ResizeMode="NoResize">
 
     <Window.Resources>
         <SolidColorBrush x:Key="HeaderBackgroundBrush" Color="#FFCCE5FF"/>

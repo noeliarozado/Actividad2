@@ -131,6 +131,8 @@ namespace Actividad2.gui
             ComboLineas = lineas;
 
             Municipios = LeerCSVMunicipios("..\\..\\..\\data\\municipios.csv");
+
+            this.ResizeMode = ResizeMode.NoResize;
         }
 
         /// <summary>

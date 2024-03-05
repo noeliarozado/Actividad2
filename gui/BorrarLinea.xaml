@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Actividad2.gui"
         mc:Ignorable="d"
-        Title="BorrarLinea" Height="450" Width="800" Background=" #E4EEFF">
+        Title="BorrarLinea" Height="450" Width="800" Background=" #E4EEFF" ResizeMode="NoResize">
     <Grid>
         <Label Content="CANCELACIÓN DE LÍNEAS" HorizontalAlignment="Center" Margin="0,51,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
         <Label Content="Seleccione la línea a borrar:" HorizontalAlignment="Left" Margin="131,156,0,0" VerticalAlignment="Top" FontSize="14"/>
