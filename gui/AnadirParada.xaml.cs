@@ -233,6 +233,8 @@ namespace Actividad2.gui
             }
             logicaBus.AnadirParadaALista(new Parada(numeroLinea, municipio, intervaloHoraSalida));
             MessageBox.Show("¡Parada añadida con éxito!");
+
+            btnAnadirNuevaParada.IsEnabled = true;
         }
 
         private void btnAnadirNuevaParada_Click(object sender, RoutedEventArgs e)

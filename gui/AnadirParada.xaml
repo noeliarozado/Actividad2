@@ -14,8 +14,8 @@
         <ComboBox x:Name="comboMunicipio" ItemsSource="{Binding Municipios}" HorizontalAlignment="Left" Margin="325,154,0,0" VerticalAlignment="Top" Width="120" FontSize="14"/>
         <TextBox x:Name="textboxIntervaloHoraSalida" Text="{Binding Path=Intervalo, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" HorizontalAlignment="Left" Margin="325,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
         <Label Content="ALTA DE ITINERARIOS" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
-        <Button x:Name="btnAnadir" Content="Añadir una parada" HorizontalAlignment="Left" Margin="466,247,0,0" VerticalAlignment="Top" Height="29" Width="212" RenderTransformOrigin="1.667,0.243" Click="btnAnadir_Click" Background="#DEF8F6" Foreground="Black" FontSize="14"/>
-        <Button x:Name="btnAnadirNuevaParada" Content="Añadir otra parada al itinerario" HorizontalAlignment="Left" Margin="466,305,0,0" VerticalAlignment="Top" Height="28" Width="212" RenderTransformOrigin="1.667,0.243" Click="btnAnadirNuevaParada_Click" Background="#DEF8F6" Foreground="Black" FontSize="14"/>
+        <Button x:Name="btnAnadir" Content="Añadir una parada" HorizontalAlignment="Left" Margin="466,246,0,0" VerticalAlignment="Top" Height="29" Width="212" RenderTransformOrigin="1.667,0.243" Click="btnAnadir_Click" Background="#DEF8F6" Foreground="Black" FontSize="14"/>
+        <Button x:Name="btnAnadirNuevaParada" Content="Nueva parada" HorizontalAlignment="Left" Margin="466,293,0,0" VerticalAlignment="Top" Height="29" Width="212" RenderTransformOrigin="1.667,0.243" Click="btnAnadirNuevaParada_Click" Background="#C6F2F0" Foreground="Black" FontSize="14" IsEnabled="False"/>
         <Button x:Name="btnVolver" HorizontalAlignment="Left" Margin="57,345,0,0" VerticalAlignment="Top" Click="btnVolver_Click">
             <Button.Style>
                 <Style TargetType="Button">
@@ -34,5 +34,6 @@
             </Button.Style>
             <Image Source="/resources/main.png" Width="50" Height="50" Opacity="0.995" />
         </Button>
+        <Label Content="Pulse este botón si quiere cumplimentar los &#xa; datos de otra parada del mismo itinerario:" HorizontalAlignment="Left" Margin="186,285,0,0" VerticalAlignment="Top" FontSize="13"/>
     </Grid>
 </Window>
