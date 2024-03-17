@@ -28,4 +28,16 @@
     <Resource Include="resources\paradabus.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="data\lineas.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="data\municipios.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="data\paradas.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

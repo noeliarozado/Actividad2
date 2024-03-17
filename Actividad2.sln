@@ -5,7 +5,9 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Actividad2", "Actividad2.csproj", "{CAC3D094-3132-4635-B024-FEB2D01A5045}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actividad2NUnit", "..\Actividad2NUnit\Actividad2NUnit.csproj", "{43EAB685-8B42-4F95-9CE6-F76094A5ED26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Actividad2NUnit", "..\Actividad2NUnit\Actividad2NUnit.csproj", "{43EAB685-8B42-4F95-9CE6-F76094A5ED26}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupActividad2", "SETUP PROJECT\SetupActividad2\SetupActividad2.vdproj", "{71C95FE7-814F-4F69-BFD8-B81A967CA6F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,8 @@ Global
 		{43EAB685-8B42-4F95-9CE6-F76094A5ED26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43EAB685-8B42-4F95-9CE6-F76094A5ED26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43EAB685-8B42-4F95-9CE6-F76094A5ED26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71C95FE7-814F-4F69-BFD8-B81A967CA6F8}.Debug|Any CPU.ActiveCfg = Debug
+		{71C95FE7-814F-4F69-BFD8-B81A967CA6F8}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
