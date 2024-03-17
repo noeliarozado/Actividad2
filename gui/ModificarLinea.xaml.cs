@@ -186,7 +186,10 @@ namespace Actividad2.gui
 
             PrecargarInput();
 
-            Municipios = LeerCSVMunicipios("..\\..\\..\\data\\municipios.csv");
+            //Municipios = LeerCSVMunicipios("..\\..\\..\\data\\municipios.csv");
+            string municipiosFilePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, 
+                "data", "municipios.csv");
+            Municipios = LeerCSVMunicipios(municipiosFilePath);
         }
 
         /// <summary>

@@ -129,7 +129,10 @@ namespace Actividad2.gui
 
             DataContext = this;
 
-            List<int> lineas = LeerCSVLineas("..\\..\\..\\data\\lineas.csv");
+            //List<int> lineas = LeerCSVLineas("..\\..\\..\\data\\lineas.csv");
+            string lineasFilePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data", "lineas.csv");
+            List<int> lineas = LeerCSVLineas(lineasFilePath);
+
             lineas.Sort();
             ComboLineas = lineas;
 
@@ -148,7 +151,10 @@ namespace Actividad2.gui
                 .ThenBy(stop => stop.IntervaloDesdeHoraSalida)
                 .ToList();
 
-            Municipios = LeerCSVMunicipios("..\\..\\..\\data\\municipios.csv");
+            //Municipios = LeerCSVMunicipios("..\\..\\..\\data\\municipios.csv");
+            string municipiosFilePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data", "municipios.csv");
+            Municipios = LeerCSVMunicipios(municipiosFilePath);
+
         }
 
         private List<int> LeerCSVLineas(string ruta)

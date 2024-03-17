@@ -10,9 +10,11 @@ namespace Actividad2.logic
 {
     public class LogicaBus
     {
-        public const string RUTA_FICHERO_CSV_LINEAS = "..\\..\\..\\data\\lineas.csv";
+        //public const string RUTA_FICHERO_CSV_LINEAS = "..\\..\\..\\data\\lineas.csv";
+        //public const string RUTA_FICHERO_CSV_PARADAS = "..\\..\\..\\data\\paradas.csv";
 
-        public const string RUTA_FICHERO_CSV_PARADAS = "..\\..\\..\\data\\paradas.csv";
+        public const string RUTA_FICHERO_CSV_LINEAS = "data\\lineas.csv";
+        public const string RUTA_FICHERO_CSV_PARADAS = "data\\paradas.csv";
 
         /// <summary>
         /// Lista de líneas de autobús
@@ -26,13 +28,20 @@ namespace Actividad2.logic
 
         public LogicaBus()
         {
-            listaLineas = CargarCSVLineas();
+            string lineasFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, 
+                RUTA_FICHERO_CSV_LINEAS);
+            string paradasFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, 
+                RUTA_FICHERO_CSV_PARADAS);
+
+            //listaLineas = CargarCSVLineas();
+            listaLineas = CargarCSVLineas(lineasFilePath);
             if (listaLineas == null)
             {
                 listaLineas = new List<Linea>();
             }
 
-            listaParadas = CargarCSVParadas();
+            //listaParadas = CargarCSVParadas();
+            listaParadas = CargarCSVParadas(paradasFilePath);
             if (listaParadas == null)
             {
                 listaParadas = new List<Parada>();
@@ -153,7 +162,7 @@ namespace Actividad2.logic
         /// Carga los datos desde el archivo CSV que contiene la información sobre las líneas
         /// </summary>
         /// <returns>Lista de líneas</returns>
-        private List<Linea> CargarCSVLineas()
+        private List<Linea> CargarCSVLineas(string lineasFilePath)
         {
             List<Linea> lineasCargadas = new List<Linea>();
             try
@@ -187,7 +196,7 @@ namespace Actividad2.logic
         /// Carga los datos desde el archivo CSV que contiene la información sobre las paradas
         /// </summary>
         /// <returns>Lista de paradas</returns>
-        private List<Parada> CargarCSVParadas()
+        private List<Parada> CargarCSVParadas(string paradasFilePath)
         {
             List<Parada> paradasCargadas = new List<Parada>();
             try

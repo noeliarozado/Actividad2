@@ -20,6 +20,9 @@ namespace Actividad2.gui
 {
     public partial class AnadirParada : Window, INotifyPropertyChanged, IDataErrorInfo
     {
+        public const string RUTA_FICHERO_CSV_LINEAS = "data\\lineas.csv";
+        public const string RUTA_FICHERO_CSV_MUNICIPIOS = "data\\municipios.csv";
+
         public string Error { get { return string.Empty; } }
 
         private int errores = 0;
@@ -126,11 +129,15 @@ namespace Actividad2.gui
 
             DataContext = this;
 
-            List<int> lineas = LeerCSVLineas("..\\..\\..\\data\\lineas.csv");
+            //List<int> lineas = LeerCSVLineas("..\\..\\..\\data\\lineas.csv");
+            List<int> lineas = LeerCSVLineas(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, 
+                RUTA_FICHERO_CSV_LINEAS));
             lineas.Sort();
             ComboLineas = lineas;
 
-            Municipios = LeerCSVMunicipios("..\\..\\..\\data\\municipios.csv");
+            //Municipios = LeerCSVMunicipios("..\\..\\..\\data\\municipios.csv");
+            Municipios = LeerCSVMunicipios(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, 
+                RUTA_FICHERO_CSV_MUNICIPIOS));
 
             this.ResizeMode = ResizeMode.NoResize;
         }
