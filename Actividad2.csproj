@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="resources\aviso.png" />
     <None Remove="resources\back.png" />
     <None Remove="resources\bus.png" />
     <None Remove="resources\lineabus.png" />
@@ -21,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="resources\aviso.png" />
     <Resource Include="resources\back.png" />
     <Resource Include="resources\bus.png" />
     <Resource Include="resources\lineabus.png" />
