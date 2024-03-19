@@ -15,6 +15,12 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_2D436C06DCAD47A980C43AF8A810B0DE"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_46C38CE6271148EB83DB082B8D7DCEFA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -116,6 +122,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2D436C06DCAD47A980C43AF8A810B0DE"
+            {
+            "SourcePath" = "8:..\\..\\resources\\busicon.ico"
+            "TargetName" = "8:busicon.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_C4E08D3B7DA94077B2156457654D004C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -293,6 +319,34 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_4B0DEED7C16941B697FCE4479C93F609"
+            {
+            "Name" = "8:AVILESA Gestión de líneas de autobuses"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_46C38CE6271148EB83DB082B8D7DCEFA"
+            "Folder" = "8:_290EA62BF8AF4BB9BE06497DD2A32479"
+            "WorkingFolder" = "8:_C4E08D3B7DA94077B2156457654D004C"
+            "Icon" = "8:_2D436C06DCAD47A980C43AF8A810B0DE"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_C61FCC05ADEC41D78589558E2A30390A"
+            {
+            "Name" = "8:AVILESA Gestión de líneas de autobuses"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_46C38CE6271148EB83DB082B8D7DCEFA"
+            "Folder" = "8:_F1DBD67161FD4513B5608AC0035B4696"
+            "WorkingFolder" = "8:_C4E08D3B7DA94077B2156457654D004C"
+            "Icon" = "8:_2D436C06DCAD47A980C43AF8A810B0DE"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
