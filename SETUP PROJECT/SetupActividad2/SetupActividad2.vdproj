@@ -15,7 +15,7 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_A79F97EFCBAB406D96893C7D591FD2C5"
+        "MsmKey" = "8:_46C38CE6271148EB83DB082B8D7DCEFA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -44,6 +44,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -68,6 +76,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -676,7 +692,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_A79F97EFCBAB406D96893C7D591FD2C5"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_46C38CE6271148EB83DB082B8D7DCEFA"
             {
             "SourcePath" = "8:..\\..\\obj\\Debug\\net8.0-windows\\apphost.exe"
             "TargetName" = "8:"
