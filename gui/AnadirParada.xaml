@@ -10,7 +10,7 @@
         <Label Content="Número de línea:" HorizontalAlignment="Left" Margin="80,100,0,0" VerticalAlignment="Top" FontSize="14"/>
         <Label Content="Municipio:" HorizontalAlignment="Left" Margin="80,150,0,0" VerticalAlignment="Top" FontSize="14"/>
         <Label Content="Intervalo desde la hora de salida:" HorizontalAlignment="Left" Margin="80,200,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <ComboBox x:Name="comboNumeroLinea" ItemsSource ="{Binding Path=ComboLineas}" HorizontalAlignment="Left" Margin="325,102,0,0" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <ComboBox x:Name="comboNumeroLinea" ItemsSource ="{Binding Path=ComboLineas}" HorizontalAlignment="Left" Margin="325,102,0,0" VerticalAlignment="Top" Width="120" FontSize="14" SelectionChanged="comboNumeroLinea_SelectionChanged"/>
         <ComboBox x:Name="comboMunicipio" ItemsSource="{Binding Municipios}" HorizontalAlignment="Left" Margin="325,154,0,0" VerticalAlignment="Top" Width="120" FontSize="14"/>
         <TextBox x:Name="textboxIntervaloHoraSalida" Text="{Binding Path=Intervalo, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" Validation.Error="Validation_Error" HorizontalAlignment="Left" Margin="325,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
         <Label Content="ALTA DE ITINERARIOS" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
@@ -35,5 +35,20 @@
             <Image Source="/resources/main.png" Width="50" Height="50" Opacity="0.995" />
         </Button>
         <Label Content="Pulse este botón si quiere cumplimentar los &#xa; datos de otra parada del mismo itinerario:" HorizontalAlignment="Left" Margin="186,285,0,0" VerticalAlignment="Top" FontSize="13"/>
+        <TextBlock x:Name="textblockDestino" HorizontalAlignment="Left" Margin="608,147,0,0" TextWrapping="Wrap" Text="-" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Recuerde incluir como" HorizontalAlignment="Left" Margin="583,102,0,0" VerticalAlignment="Top" Width="149" Height="27" FontSize="14" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.764"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.32"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="última parada el" HorizontalAlignment="Left" Margin="583,123,0,0" VerticalAlignment="Top" Width="110" Height="27" FontSize="14"/>
+
+        <Label Content="destino" HorizontalAlignment="Left" Margin="688,123,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.372,0.491"/>
+        <Label Content="a:" HorizontalAlignment="Left" Margin="583,142,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="-0.298,0.665"/>
     </Grid>
 </Window>

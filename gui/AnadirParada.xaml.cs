@@ -139,6 +139,8 @@ namespace Actividad2.gui
             Municipios = LeerCSVMunicipios(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, 
                 RUTA_FICHERO_CSV_MUNICIPIOS));
 
+            comboNumeroLinea.SelectionChanged += comboNumeroLinea_SelectionChanged;
+
             this.ResizeMode = ResizeMode.NoResize;
         }
 
@@ -273,6 +275,21 @@ namespace Actividad2.gui
             MenuPrincipal menuPrincipal = new MenuPrincipal();
             menuPrincipal.Show();
             this.Close();
+        }
+
+        private void comboNumeroLinea_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (comboNumeroLinea.SelectedItem != null)
+            {
+                int numeroLineaSeleccionado = (int)comboNumeroLinea.SelectedItem;
+                Linea lineaSeleccionada = logicaBus.GetListaLineas().FirstOrDefault(linea => 
+                linea.NumeroLinea == numeroLineaSeleccionado);
+
+                if (lineaSeleccionada != null)
+                {
+                    textblockDestino.Text = lineaSeleccionada.MunicipioDestino;
+                }
+            }
         }
     }
 }
