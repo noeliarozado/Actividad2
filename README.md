@@ -3,7 +3,7 @@
 Aplicación para la gestión de líneas de autobuses entre municipios para la empresa de autobuses AVILESA.
 La aplicación permite dar de alta, baja, modificar y consultar líneas de autobús e itinerarios.
 
-Incluye el instalador de la aplicaciçon.
+Incluye el instalador de la aplicación.
 
 ## CAPTURAS DE PANTALLA DE LA APLICACIÓN
 
