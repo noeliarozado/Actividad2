@@ -5,6 +5,8 @@ La aplicación permite dar de alta, baja, modificar y consultar líneas de autob
 
 Incluye el instalador de la aplicación.
 
+[Casos de prueba unitaria](https://github.com/noeliarozado/NUnitAutobusesApp.git) sobre métodos de la aplicación.
+
 ## CAPTURAS DE PANTALLA DE LA APLICACIÓN
 
 ## Gestión de líneas de autobuses
